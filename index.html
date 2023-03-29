@@ -90,23 +90,23 @@
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link Log in"><b>Log in/Sign up</b></a>
+            <a href="#services" class="navbar-link Services"><b>Services</b></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link Services"><b>Services</b></a>
+            <a href="#aboutus" class="navbar-link About us"><b>About Us</b></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link MJPJAY"><b>MJPJAY</b></a>
+            <a href="#login" class="navbar-link Log in"><b>Log in/Sign up</b></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link About us"><b>About Us</b></a>
+            <a href="#mjpjy" class="navbar-link MJPJAY"><b>MJPJAY</b></a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link Contact us"><b>Contact Us</b></a>
+            <a href="#contactus" class="navbar-link Contact us"><b>Contact Us</b></a>
           </li>
 
         </ul>
@@ -224,7 +224,7 @@
       -->
        
       <section class="service" aria-label="service">
-        <div class="container">
+        <div id="services" class="container">
         
           <ul class="service-list">
            
@@ -332,7 +332,7 @@
       -->
 
       <section class="section about" aria-labelledby="about-label">
-        <div class="container">
+        <div id="aboutus" class="container">
 
           <div class="about-content">
 
@@ -420,71 +420,73 @@
       <!-- 
         - #LISTING
       -->
+<div id="login">
 
-      <section class="section listing" aria-labelledby="listing-label">
-        <div class="container">
+  <section class="section listing" aria-labelledby="listing-label">
+    <div  class="container">
 
-          <ul class="grid-list">
-
+          <ul class="grid-list" name="logsign">
+            
             <li>
               <!-- <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listig</p> -->
-
+              
               <h2 class="headline-md" data-reveal="left">LOG IN or SIGN UP as </h2>
             </li>
-
-            <a href="" class="patient login">
-            <li>
+            
+            <a href="assets/login.html" class="patient login">
+              <li>
               <div class="listing-card" data-reveal="bottom">
 
                 <div class="card-icon">
                   <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
-
+                
                 <div>
-                  <h3 class="headline-sm card-title" style="padding-top: 18px;">Patient</h3>
-
+                  <h3 class="headline-sm card-title"  style="padding-top: 18px;">Patient</h3>
+                  
                   <!-- <p class="card-text">Porta velittuiy</p>-->
                 </div> 
-
+                
               </div>
             </li>
           </a>
-
-            <a href="#" class="doctor login">
+          
+          <a href="#" class="doctor login">
             <li>
               <div class="listing-card" data-reveal="bottom">
-
+                
                 <div class="card-icon">
                   <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
-
+                
                 <div>
                   <h3 class="headline-sm card-title" style="padding-top: 18px;">Doctor</h3>
-
+                  
                   <!-- <p class="card-text">Mattis augue</p> -->
                 </div>
-
+                
               </div>
             </li>
           </a>
-
-         <a href="#" class="admin login">
+          
+          <a href="#" class="admin login">
             <li>
               <div class="listing-card" data-reveal="bottom">
-
+                
                 <div class="card-icon">
                   <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
-
+                
                 <div>
                   <h3 class="headline-sm card-title" style="padding-top: 18px;">Admin</h3>
-
+                  
                   <!-- <p class="card-text">Mauris laoreet</p> -->
                 </div>
-
+                
               </div>
             </li>
           </a>
+        </div>
             <!-- <li>
               <div class="listing-card" data-reveal="bottom">
 
@@ -547,7 +549,7 @@
       -->
 
       <section class="section blog" aria-labelledby="blog-label">
-        <div class="container">
+        <div id="mjpjy" class="container">
 
           <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
             MJPJAY
@@ -883,7 +885,7 @@
 
 
   <footer class="et-l et-l--footer">
-    <div class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+    <div id="contactus" class="et_builder_inner_content et_pb_gutters3"><div class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
       
       
       
@@ -1024,7 +1026,7 @@ India-444605</p>
              target="_blank"><span
               class='et_pb_social_media_follow_network_name'
               aria-hidden='true'
-              > <img src="assets/images/Facebook-icon.png" alt="Facebook" style="height: 35px; height: 35px;"></span></a></li>
+              > <img src="/assets/images/Facebook-icon.png" alt="Facebook" style="height: 35px; height: 35px;"></span></a></li>
               <li
           class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-instagram'>
           <a
@@ -1092,7 +1094,7 @@ India-444605</p>
     </div>
     </div> -->
     <div class="et_pb_column et_pb_column_1_6 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty">
-      
+
       
     </div>
         
@@ -1111,6 +1113,11 @@ India-444605</p>
   <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
+
+  <div style="text-align: center; background-color: hsl(186, 100%, 19%);">
+    ChildCareHQ &COPY; All Rights Reserved.
+
+  </div>
 
 
   <!-- 
