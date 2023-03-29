@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Signup</title>
+</head>
+<style>
+
+  body{
+    background-color: darkcyan;
+  }
+    input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #ddd;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* Set a style for all buttons */
+.modal button {
+  background-color: hsl(186, 100%, 19%);;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.modal button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.modal .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 23%;
+  border-radius: 20%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+</style>
+<body>
+    <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="/assets/images/patient-signup.jpg" alt="Avatar" class="avatar">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Patient name</b></label>
+            <input type="text" placeholder="Enter your name" name="uname" required>
+
+            <label for="psw"><b>Email</b></label>
+            <input type="text" placeholder="Enter your Email" name="ema" required>
+<br><br>
+            <label for="psw"><b>Date of Birth</b></label>
+            <input type="date" placeholder="Enter your DOB in ddmmyyyy" name="dob" required>
+<br><br>
+              <b>Gender :</b> 
+     <label for="Male">
+    <input type="radio" value="Gender male" name="gender" id="Male"> Male&nbsp;
+    </label>
+    <label for="Female">
+    <input type="radio" value="Gender female" name="gender" id="Female"> Female&nbsp;
+    </label>
+    <label for="other">
+    <input type="radio" value="Gender other" name="gender" id="other"> Other <br>
+    </label>
+<br>
+            <label for="psw"><b>Phone no</b></label>
+            <input type="text" placeholder="Enter your phone no " name="pho" required>
+<br>
+            <label for="psw"><b>Address</b></label>
+            <input type="text" placeholder="Enter your Address " name="add" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw"><b>Re-enter Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Create Account</button>
+            <label>
+             
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
